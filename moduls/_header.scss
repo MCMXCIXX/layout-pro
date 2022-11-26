@@ -1,0 +1,33 @@
+.header {
+    background: $colorGray;
+    padding: 18px 0 19px 0;
+    &__wrap {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__part {
+        display: flex;
+        align-items: center;
+    }
+    &__input-search {
+        display: none;
+    }
+    &__icon {
+        &_menu {
+            background: transparent;
+            border: none;
+        }
+        & svg {
+            fill: #fff;
+            transition: all 0.3s ease;
+            &:hover {
+                fill: $colorPink;
+            }
+        }
+        fill: $colorPink;
+        cursor: pointer;
+        &:not(:last-child) {
+            margin-right: 33px;
+        }
+    }
+}

@@ -1,0 +1,93 @@
+.featured {
+    padding: 0 0 103px 0;
+    &__title {
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 36px;
+        color: $colorGray;
+        text-align: center;
+    }
+    &__dicription {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        color: #9F9F9F;
+        text-align: center;
+        margin: 6px 0 48px 0;
+    }
+    &__btn_wrap {
+        display: flex;
+        justify-content: center;
+    }
+
+}
+.product-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-bottom: 68px;
+    cursor: pointer;
+}
+.product-card {
+    background: #F8F8F8;
+    width: 360px;
+    height: 581px;
+    margin-bottom: 30px;
+    &_img {
+        position: relative;
+        &:hover .product-card__overlay {
+            opacity: 1;
+        }
+    }
+    &__overlay {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(58, 56, 56, 0.86);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all 0.3s;
+        opacity: 0;
+    }
+    &__btn {
+        background: transparent url(../img/cart.svg) no-repeat 10px 10px;
+        border: 1px solid #fff;
+        color: #fff;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        padding-left: 55px;
+        &:hover {
+            background: transparent url(../img/cart.svg) no-repeat 10px 10px;
+            opacity: 0.75;
+        }
+        &:focus {
+            margin-bottom: -5px;
+        }
+    }
+    &__text {
+        padding: 20px 16px;
+        max-width: 315px;
+    }
+    &__title {
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 16px;
+    }
+    &__disc {
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 17px;
+        color: #5D5D5D;
+        margin: 12px 0;
+    }
+    &__price {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        color: $colorPink;
+    }
+}

@@ -1,0 +1,58 @@
+.offers {
+    padding: 65px 0 96px 0;
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .offer {
+        width: 360px;
+        height: 260px;
+        background: #ccc;
+        margin-bottom: 35px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        &_img-women {
+            background: #000 no-repeat url(../img/forwomen.jpg);
+        }
+        &_img-men {
+            background: #000 no-repeat url(../img/formen.jpg);
+        }
+        &_img-kids {
+            background: #000 no-repeat url(../img/forkids.jpg);
+        }
+        &_img-accesories {
+            width: 100%;
+            height: 180px;
+            background: #000 no-repeat url(../img/accesories.jpg);
+        }
+        &__overlay {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(34, 22, 22, 0.7);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            & p {
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 19px;
+                text-align: center;
+                color: #fff;
+                text-transform: uppercase;
+            }
+            & span {
+                color: $colorPink;
+                display: block;
+                font-weight: 700;
+                font-size: 24px;
+                line-height: 29px;
+                }
+            }
+        }
+    }
