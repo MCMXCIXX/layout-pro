@@ -27,6 +27,9 @@ body {
     background: $colorPink;
     color:#FFF; ;
 }
+details summary {
+    list-style: none;
+}
 // SCSS
 
 body {
@@ -697,4 +700,6 @@ body {
 @import '../moduls/advantages';
 @import '../moduls/subscribe';
 @import '../moduls/footer';
+@import '../moduls/breadcrumb';
+@import '../moduls/filter';
 @import url(reset.css);

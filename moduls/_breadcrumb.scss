@@ -1,0 +1,42 @@
+.breadcrumb {
+    background: #F8F3F4;
+    padding: 60px 0;
+    text-transform: uppercase;
+    &-wrap {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__title-wrap {
+    }
+    &__title {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 29px;
+        color: #F16D7F;
+    }
+    &__nav-wrap {
+    }
+    &__nav {
+        display: flex;
+        justify-content: flex-end;
+        
+    }
+    &__item {
+        text-decoration: none;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 17px;
+        color: #636363;
+        &:not(:last-child)::after {
+            content: '/';
+            padding: 0 3px;
+        }
+        &_active{
+            color: $colorPink;
+            font-weight: 700;
+        }
+    }
+
+
+}
