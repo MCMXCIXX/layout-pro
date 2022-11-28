@@ -399,7 +399,7 @@ button.fetured__overlay_btn {
 .breadcrumb__nav :last-child::after {
     content: '';
 }
-.breadcrumb__nav :last-child {
+.breadcrumb__nav:last-child {
     color: #F16D7F;
     font-weight: 700;
 }
@@ -410,7 +410,7 @@ button.fetured__overlay_btn {
     line-height: 17px;
     color: #636363;
 }
-.breadcrumb__item::after {
+.breadcrumb__item::after:not(last) {
     content: '/';
     padding: 0 3px;
 }
@@ -558,8 +558,6 @@ details summary {
     box-sizing: border-box;
     position: absolute;
 }
-
-
 .filter__droplist_wrap {
     background: #fff;
     box-shadow: 12px 12px 10px 10px rgba(0, 0, 0, .2);
