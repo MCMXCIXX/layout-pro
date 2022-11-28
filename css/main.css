@@ -774,4 +774,95 @@ body {
   -webkit-box-shadow: 12px 12px 10px 10px rgba(0, 0, 0, 0.2);
           box-shadow: 12px 12px 10px 10px rgba(0, 0, 0, 0.2);
 }
+
+.product-info {
+  border: 1px solid #6F6E6E;
+  background: #fff;
+  position: relative;
+  z-index: 2;
+  top: -65px;
+  padding: 64px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.product-info__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #5E5E5E;
+  width: 555px;
+  padding: 0 0 65px 0;
+  border-bottom: 1px solid #6F6E6E;
+  margin: 0 0 65px 0;
+}
+
+.product-info__title {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  text-transform: uppercase;
+  position: relative;
+  margin: 0 0 27px;
+}
+
+.product-info__title::after {
+  content: '';
+  position: absolute;
+  bottom: -12px;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  width: 63px;
+  height: 3px;
+  background: #EF5B70;
+}
+
+.product-info__subtitle {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 22px;
+  text-transform: uppercase;
+  margin: 0 0 48px 0;
+}
+
+.product-info__disc {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  margin: 0 0 32px 0;
+}
+
+.product-info__price {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  color: #EF5B70;
+}
+
+.product-info__btn-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 48px 0 0 0;
+}
 /*# sourceMappingURL=main.css.map */

@@ -42,20 +42,20 @@
         </div>
     </header>
     <main>
-        <header class="breadcrumb">
-            <div class="breadcrumb__wrap container">
-                <div class="breadcrumb__title_wrap">
+        <section class="breadcrumb">
+            <div class="breadcrumb-wrap container">
+                <div class="breadcrumb__title-wrap">
                     <h1 class="breadcrumb__title">new arrivals</h1>
                 </div>
-                <div class="breadcrumb__nav_wrap">
+                <div class="breadcrumb__nav-wrap">
                     <nav class="breadcrumb__nav">
                         <a href="#" class="breadcrumb__item">home</a>
                         <a href="#" class="breadcrumb__item">men</a>
-                        <a href="#" class="breadcrumb__item">new arrivals</a>
+                        <a href="#" class="breadcrumb__item breadcrumb__item_active">new arrivals</a>
                     </nav>
                 </div>
             </div>
-        </header>
+        </section>
         <section class="container">
             <!-- <div class="filter__list">
                 <div class="filter__main_wrap">
@@ -176,90 +176,90 @@
                 <img src="img/woman.jpg" alt="woman">
             </div>
         </section>
-        <section class="info container">
-            <div class="info__text">
-                <h2 class="info__title">women collection</h2>
-                <h3 class="info__subtitle">moschino cheap and chic</h3>
-                <p class="info__disc">Compellingly actualize fully researched processes before proactive outsourcing. Progressively syndicate collaborative architectures before cutting-edge services. Completely visualize parallel core competencies rather than exceptional portals.</p>
-                <p class="info__price">$561</p>
+        <section class="product-info container">
+            <div class="product-info__text">
+                <h2 class="product-info__title">women collection</h2>
+                <h3 class="product-info__subtitle">moschino cheap and chic</h3>
+                <p class="product-info__disc">Compellingly actualize fully researched processes before proactive outsourcing. Progressively syndicate collaborative architectures before cutting-edge services. Completely visualize parallel core competencies rather than exceptional portals.</p>
+                <p class="product-info__price">$561</p>
             </div>
-            <div class="info_filter">
-                <div class="filter__center">
-                    <div class="filter__trade_wrap filter__center_item">
-                        <details class="filter__trade">
+            <div class="product-info__filter">
+                <div class="filter__secondary">
+                    <div class="filter__trend-wrap filter__secondary-item">
+                        <details class="filter__trend">
                             <summary>
-                                choose color
+                                trending now
                             </summary>
-                            <div class="filter__droplist_wrap">
-                                <div class="filter__droplist_row">
+                            <div class="filter__droplist-wrap">
+                                <div class="filter__row">
                                     <input type="checkbox" name="" id="xs">
                                     <label for="xs">xs</label>
                                 </div>
-                                <div class="filter__droplist_row">
+                                <div class="filter__row">
                                     <input type="checkbox" name="" id="s">
                                     <label for="s">s</label>
                                 </div>
-                                <div class="filter__droplist_row">
+                                <div class="filter__row">
                                     <input type="checkbox" name="" id="m">
                                     <label for="m">m</label>
                                 </div>
-                                <div class="filter__droplist_row">
+                                <div class="filter__row">
                                     <input type="checkbox" name="" id="l">
                                     <label for="l">l</label>
                                 </div>
                             </div>
                         </details>
                     </div>
-                    <div class="filter__size_wrap filter__center_item">
+                    <div class="filter__size-wrap filter__secondary-item">
                         <details class="filter__size">
                             <summary>
-                                choose size 
+                                size
                             </summary>
-                            <div class="filter__droplist_wrap">
-                                <div class="filter__droplist_row">
+                            <div class="filter__droplist-wrap">
+                                <div class="filter__row">
                                     <input type="checkbox" name="" id="xs">
                                     <label for="xs">xs</label>
                                 </div>
-                                <div class="filter__droplist_row">
+                                <div class="filter__row">
                                     <input type="checkbox" name="" id="s">
                                     <label for="s">s</label>
                                 </div>
-                                <div class="filter__droplist_row">
+                                <div class="filter__row">
                                     <input type="checkbox" name="" id="m">
                                     <label for="m">m</label>
                                 </div>
-                                <div class="filter__droplist_row">
+                                <div class="filter__row">
                                     <input type="checkbox" name="" id="l">
                                     <label for="l">l</label>
                                 </div>
                         </details>
                     </div>
-                    <div class="filter__price_wrap filter__center_item">
+                    <div class="filter__price-wrap filter__secondary-item">
                         <details class="filter__price">
                             <summary>
-                                quantity
+                                price
                             </summary>
-                            <div class="filter__droplist_wrap">
-                                <div class="filter__droplist_row">
+                            <div class="filter__droplist-wrap">
+                                <div class="filter__row">
                                     <input type="checkbox" name="" id="xs">
                                     <label for="xs">xs</label>
                                 </div>
-                                <div class="filter__droplist_row">
+                                <div class="filter__row">
                                     <input type="checkbox" name="" id="s">
                                     <label for="s">s</label>
                                 </div>
-                                <div class="filter__droplist_row">
+                                <div class="filter__row">
                                     <input type="checkbox" name="" id="m">
                                     <label for="m">m</label>
                                 </div>
-                                <div class="filter__droplist_row">
+                                <div class="filter__row">
                                     <input type="checkbox" name="" id="l">
                                     <label for="l">l</label>
                                 </div>
                         </details>
                     </div>
                 </div>
-                <div class="info__btn_wrap">
+                <div class="product-info__btn-wrap">
                     <button class="btn">Add to Cart</button>
                 </div>
             </div>
@@ -378,5 +378,14 @@
             </div>
         </div>
     </footer>
+    <!-- <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script> -->
+    <script src="libs/slick.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+          $('.slider').slick({
+          });
+        });
+      </script>
 </body>
 </html>
