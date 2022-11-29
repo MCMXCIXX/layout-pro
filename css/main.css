@@ -2,14 +2,11 @@
 body {
   font-family: lato, sans-serif;
 }
-html {
-  scroll-behavior: smooth;
-}
 
 .container {
   max-width: 1160px;
   margin: auto;
-  padding: 0 10px;
+  padding: 0 15px;
 }
 
 .btn {
@@ -79,6 +76,8 @@ body {
   fill: #fff;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
+  width: 32px;
+  height: 32px;
 }
 
 .header__icon svg:hover {
@@ -90,7 +89,6 @@ body {
 }
 
 .promo {
-  height: 764px;
   background: #F1E4E6;
 }
 
@@ -99,13 +97,14 @@ body {
   display: -ms-flexbox;
   display: flex;
   height: 100%;
+  height: 100vh;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: no-repeat url(../img/man.png) -228px;
+  background: no-repeat url(../img/man.png) -228px 0;
 }
 
 .promo__text {
@@ -149,8 +148,8 @@ body {
       flex-wrap: wrap;
 }
 
-.offers .offer {
-  width: 360px;
+.offer {
+  width: 32%;
   height: 260px;
   background: #ccc;
   margin-bottom: 35px;
@@ -166,25 +165,29 @@ body {
   position: relative;
 }
 
-.offers .offer_img-women {
+.offer_img-women {
   background: #000 no-repeat url(../img/forwomen.jpg);
+  background-size: cover;
 }
 
-.offers .offer_img-men {
+.offer_img-men {
   background: #000 no-repeat url(../img/formen.jpg);
+  background-size: cover;
 }
 
-.offers .offer_img-kids {
+.offer_img-kids {
   background: #000 no-repeat url(../img/forkids.jpg);
+  background-size: cover;
 }
 
-.offers .offer_img-accesories {
+.offer_img-accesories {
   width: 100%;
   height: 180px;
   background: #000 no-repeat url(../img/accesories.jpg);
+  background-size: cover;
 }
 
-.offers .offer__overlay {
+.offer__overlay {
   position: absolute;
   top: 0;
   right: 0;
@@ -202,7 +205,7 @@ body {
           align-items: center;
 }
 
-.offers .offer__overlay p {
+.offer__overlay p {
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;
@@ -211,7 +214,7 @@ body {
   text-transform: uppercase;
 }
 
-.offers .offer__overlay span {
+.offer__overlay span {
   color: #F16D7F;
   display: block;
   font-weight: 700;
@@ -884,5 +887,110 @@ div.slider__item {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media (max-width: 450.99px) {
+  .header__icon:not(:last-child) {
+    margin-right: 15px;
+  }
+  .header__icon svg {
+    width: 25px;
+  }
+  .promo__title {
+    font-size: 22px;
+    line-height: 28px;
+  }
+  .promo__text_large {
+    font-size: 38px;
+    line-height: 48px;
+  }
+}
+
+@media (max-width: 1200.99px) {
+  .product-card:nth-child(odd) {
+    margin-right: 50px;
+  }
+  .product-list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media (max-width: 900.99px) {
+  .promo__text {
+    margin-right: 0;
+  }
+  .offer {
+    width: 100%;
+  }
+  .subscription {
+    padding: 0;
+  }
+}
+
+@media (max-width: 800.99px) {
+  .promo__wrap {
+    background-image: none;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .product-card:nth-child(odd) {
+    margin-right: 25px;
+  }
+}
+
+@media (max-width: 775px) {
+  .product-card:nth-child(odd) {
+    margin: 0 15px;
+  }
+  .subcribe__wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .subscription {
+    padding: 50px 0 0 0;
+  }
+  .quote__text {
+    text-align: center;
+  }
+  .quote {
+    padding: 45px 0 55px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .quote__img {
+    width: 100px;
+  }
+}
+
+@media (max-width: 600.99px) {
+  .advantages__list {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .advantages-block {
+    margin-bottom: 50px;
+  }
+  .advantages-block__title {
+    margin: 14px 0 8px 0;
+  }
+  .subscription__input {
+    width: 240px;
+  }
 }
 /*# sourceMappingURL=main.css.map */

@@ -20,6 +20,8 @@
         & svg {
             fill: #fff;
             transition: all 0.3s ease;
+            width: 32px;
+            height: 32px;
             &:hover {
                 fill: $colorPink;
             }
