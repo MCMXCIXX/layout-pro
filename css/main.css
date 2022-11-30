@@ -973,6 +973,11 @@ div.slider__item {
   .quote__img {
     width: 100px;
   }
+  .filter__secondary {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
 }
 
 @media (max-width: 600.99px) {
@@ -991,6 +996,21 @@ div.slider__item {
   }
   .subscription__input {
     width: 240px;
+  }
+  .filter__secondary-item summary::after {
+    right: -16px;
+  }
+  .filter__secondary-item {
+    margin: 0 20px 0 0;
+  }
+  .breadcrumb-wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .breadcrumb__title-wrap {
+    margin-bottom: 40px;
   }
 }
 /*# sourceMappingURL=main.css.map */

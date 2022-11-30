@@ -66,6 +66,9 @@
     .quote__img {
         width: 100px;
     }
+    .filter__secondary {
+        justify-content: flex-end;
+    }
 }
 @media (max-width: 600.99px) {
     .advantages__list {
@@ -80,5 +83,17 @@
     }
     .subscription__input {
         width: 240px;
+    }
+    .filter__secondary-item summary::after {
+        right: -16px;
+    }
+    .filter__secondary-item {
+        margin: 0 20px 0 0;
+    }
+    .breadcrumb-wrap {
+        flex-direction: column;
+    }
+    .breadcrumb__title-wrap {
+        margin-bottom: 40px;
     }
 }
